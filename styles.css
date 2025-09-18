@@ -1,0 +1,36 @@
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --max-width: 1000px; --gap: 1rem; font-family: system-ui, Arial, sans-serif; }
+
+/* Layout */
+.container { max-width: var(--max-width); margin: 0 auto; padding: 1rem; }
+.site-header { background: #0a0a0a; color: white; }
+.site-header .container { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+.brand { font-weight:700; color: white; text-decoration:none; }
+
+/* Nav */
+.nav { display: none; }
+.nav ul { list-style:none; display:flex; gap:1rem; }
+.nav a { color:white; text-decoration:none; padding:0.5rem; }
+
+/* Hero + features */
+.hero { padding: 3rem 0; text-align:center; }
+.features { display:grid; grid-template-columns:1fr; gap:1rem; padding:2rem 0; }
+.features article { padding:1rem; border:1px solid #ddd; border-radius:8px; }
+
+/* Footer */
+.site-footer { background:#f5f5f5; padding:1rem 0; margin-top:2rem; text-align:center; }
+
+/* Buttons */
+.btn { display:inline-block; padding:0.6rem 1rem; border-radius:6px; background:#0a74ff; color:white; text-decoration:none; }
+
+/* Form styles */
+form label { display:block; margin-bottom:0.75rem; }
+input, textarea { width:100%; padding:0.5rem; margin-top:0.25rem; border:1px solid #ccc; border-radius:6px; }
+
+/* Responsive */
+@media(min-width:700px) {
+  .nav { display:block; }
+  #nav-toggle { display:none; }
+  .features { grid-template-columns: repeat(3,1fr); }
+}
