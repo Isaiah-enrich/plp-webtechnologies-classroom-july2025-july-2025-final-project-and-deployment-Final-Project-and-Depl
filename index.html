@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Multipage Site — Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">MySite</a>
+      <button id="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1>Build. Organize. Deploy.</h1>
+      <p>Example multipage site demonstrating responsive layout and interactivity.</p>
+      <a class="btn" href="about.html">Learn more</a>
+    </section>
+
+    <section class="features container">
+      <article>
+        <h3>Responsive</h3>
+        <p>Layouts adapt to mobile and desktop sizes.</p>
+      </article>
+      <article>
+        <h3>Interactive</h3>
+        <p>Menu toggles and form validation included.</p>
+      </article>
+      <article>
+        <h3>Deployed</h3>
+        <p>Ready to host on GitHub Pages, Netlify, or Vercel.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> MySite</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
